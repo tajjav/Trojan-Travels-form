@@ -1,5 +1,6 @@
 using System.Windows.Forms;
 using Trojan_Travels.Models;
+using Trojan_Travels.UserControls;
 
 namespace Trojan_Travels
 {
@@ -20,7 +21,7 @@ namespace Trojan_Travels
             dbContext = new TravelExpertsContext();
 
             dataGVPackage.DataSource = packageBindingSource;
-            dataGVPPS.DataSource = ppsBindingSource;
+            dataGVPS.DataSource = ppsBindingSource;
             dataGVPS.DataSource = psBindingSource;
             dataGVProduct.DataSource = productBindingSource;
             dataGVSupplier.DataSource = supplierBindingSource;
@@ -499,6 +500,18 @@ namespace Trojan_Travels
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnPackagesUserControl_Click(object sender, EventArgs e)
+        {
+            if (!Panel.Controls.Contains(PackagesUserControls.Instance))
+            {
+                Panel.Controls.Add(PackagesUserControls.Instance);
+                PackagesUserControls.Instance.Dock = DockStyle.Fill;
+                PackagesUserControls.Instance.BringToFront();
+            }
+            else
+                PackagesUserControls.Instance.BringToFront();
         }
     }
 }

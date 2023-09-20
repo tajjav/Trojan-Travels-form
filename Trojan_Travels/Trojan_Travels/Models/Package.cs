@@ -8,21 +8,6 @@ namespace Trojan_Travels.Models;
 
 public partial class Package
 {
-    // Parameterless constructor (default constructor)
-    public Package()
-    {
-    }
-
-    // Constructor with parameters that match property names
-    public Package(string pkgName, DateTime pkgStartDate, DateTime pkgEndDate, string pkgDesc, decimal pkgBasePrice, decimal pkgAgencyCommission)
-    {
-        PkgName = pkgName;
-        PkgStartDate = pkgStartDate;
-        PkgEndDate = pkgEndDate;
-        PkgDesc = pkgDesc;
-        PkgBasePrice = pkgBasePrice;
-        PkgAgencyCommission = pkgAgencyCommission;
-    }
     [Key]
     public int PackageId { get; set; }
 

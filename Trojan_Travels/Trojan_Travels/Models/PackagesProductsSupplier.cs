@@ -10,7 +10,7 @@ namespace Trojan_Travels.Models;
 [Index("PackageId", Name = "PackagesPackages_Products_Suppliers")]
 [Index("ProductSupplierId", Name = "ProductSupplierId")]
 [Index("ProductSupplierId", Name = "Products_SuppliersPackages_Products_Suppliers")]
-[Index("PackageId", "ProductSupplierId", Name = "UQ__Packages__29CA8E95AB5A33A5", IsUnique = true)]
+[Index("PackageId", "ProductSupplierId", Name = "UQ__Packages__29CA8E952BA6E07B", IsUnique = true)]
 public partial class PackagesProductsSupplier
 {
     [Key]

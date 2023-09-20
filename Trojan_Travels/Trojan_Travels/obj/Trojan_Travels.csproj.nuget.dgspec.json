@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\miche\\Documents\\sait_full_stack\\course_d\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {}
+    "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\miche\\Documents\\sait_full_stack\\course_d\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {
+    "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miche\\Documents\\sait_full_stack\\course_d\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
+        "projectUniqueName": "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
         "projectName": "Trojan_Travels",
-        "projectPath": "C:\\Users\\miche\\Documents\\sait_full_stack\\course_d\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
-        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miche\\Documents\\sait_full_stack\\course_d\\Trojan_Travels\\Trojan_Travels\\obj\\",
+        "projectPath": "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
+        "packagesPath": "C:\\Users\\nca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

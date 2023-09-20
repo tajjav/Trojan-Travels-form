@@ -80,6 +80,12 @@
             btnMgPS = new Button();
             btnMgSuppliers = new Button();
             btnManageProducts = new Button();
+            pictureBox1 = new PictureBox();
+            BtnPackagesUserControl = new Button();
+            BtnProductsUserControl = new Button();
+            BtnSupplierUserControl = new Button();
+            panel = new Panel();
+            packagesUserControls1 = new UserControls.PackagesUserControls();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -88,6 +94,8 @@
             ((System.ComponentModel.ISupportInitialize)dataGVSupplier).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGVProduct).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox2
@@ -98,9 +106,9 @@
             groupBox2.Controls.Add(btnAddSupplier);
             groupBox2.Controls.Add(txtSupplierName);
             groupBox2.Controls.Add(label4);
-            groupBox2.Location = new Point(446, 733);
+            groupBox2.Location = new Point(1318, 1073);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(428, 161);
+            groupBox2.Size = new Size(442, 166);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Supplier";
@@ -176,7 +184,7 @@
             groupBox3.Controls.Add(label8);
             groupBox3.Controls.Add(txtPackageName);
             groupBox3.Controls.Add(label2);
-            groupBox3.Location = new Point(33, 24);
+            groupBox3.Location = new Point(117, 818);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(436, 392);
             groupBox3.TabIndex = 1;
@@ -326,7 +334,7 @@
             groupBox4.Controls.Add(label9);
             groupBox4.Controls.Add(txtPSProductId);
             groupBox4.Controls.Add(label10);
-            groupBox4.Location = new Point(420, 459);
+            groupBox4.Location = new Point(832, 903);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(428, 259);
             groupBox4.TabIndex = 2;
@@ -407,28 +415,28 @@
             // dataGVPackage
             // 
             dataGVPackage.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGVPackage.Location = new Point(569, 164);
+            dataGVPackage.Location = new Point(18, 1288);
             dataGVPackage.Name = "dataGVPackage";
             dataGVPackage.RowHeadersWidth = 51;
             dataGVPackage.RowTemplate.Height = 29;
-            dataGVPackage.Size = new Size(1166, 221);
+            dataGVPackage.Size = new Size(839, 156);
             dataGVPackage.TabIndex = 24;
             // 
             // dataGVPS
             // 
             dataGVPS.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGVPS.Location = new Point(1089, 459);
+            dataGVPS.Location = new Point(878, 1288);
             dataGVPS.Name = "dataGVPS";
             dataGVPS.RowHeadersWidth = 51;
             dataGVPS.RowTemplate.Height = 29;
-            dataGVPS.Size = new Size(427, 171);
+            dataGVPS.Size = new Size(362, 156);
             dataGVPS.TabIndex = 25;
             dataGVPS.CellContentClick += dataGVPS_CellContentClick;
             // 
             // dataGVSupplier
             // 
             dataGVSupplier.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGVSupplier.Location = new Point(1105, 689);
+            dataGVSupplier.Location = new Point(1388, 1288);
             dataGVSupplier.Name = "dataGVSupplier";
             dataGVSupplier.RowHeadersWidth = 51;
             dataGVSupplier.RowTemplate.Height = 29;
@@ -438,7 +446,7 @@
             // dataGVProduct
             // 
             dataGVProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGVProduct.Location = new Point(1105, 883);
+            dataGVProduct.Location = new Point(1936, 1288);
             dataGVProduct.Name = "dataGVProduct";
             dataGVProduct.RowHeadersWidth = 51;
             dataGVProduct.RowTemplate.Height = 29;
@@ -448,7 +456,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(898, 116);
+            label14.Location = new Point(345, 1230);
             label14.Name = "label14";
             label14.Size = new Size(63, 20);
             label14.TabIndex = 29;
@@ -457,7 +465,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(1313, 417);
+            label15.Location = new Point(992, 1242);
             label15.Name = "label15";
             label15.Size = new Size(121, 20);
             label15.TabIndex = 30;
@@ -466,7 +474,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(1272, 656);
+            label17.Location = new Point(1549, 1242);
             label17.Name = "label17";
             label17.Size = new Size(64, 20);
             label17.TabIndex = 32;
@@ -475,7 +483,7 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(1240, 860);
+            label18.Location = new Point(2076, 1242);
             label18.Name = "label18";
             label18.Size = new Size(60, 20);
             label18.TabIndex = 33;
@@ -489,7 +497,7 @@
             groupBox1.Controls.Add(btnAddProduct);
             groupBox1.Controls.Add(txtProductName);
             groupBox1.Controls.Add(label11);
-            groupBox1.Location = new Point(446, 915);
+            groupBox1.Location = new Point(1837, 1101);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(428, 138);
             groupBox1.TabIndex = 22;
@@ -551,7 +559,7 @@
             // 
             // btnMgPackages
             // 
-            btnMgPackages.Location = new Point(583, 33);
+            btnMgPackages.Location = new Point(130, 1216);
             btnMgPackages.Name = "btnMgPackages";
             btnMgPackages.Size = new Size(153, 51);
             btnMgPackages.TabIndex = 34;
@@ -561,7 +569,7 @@
             // 
             // btnMgPS
             // 
-            btnMgPS.Location = new Point(845, 24);
+            btnMgPS.Location = new Point(966, 1168);
             btnMgPS.Name = "btnMgPS";
             btnMgPS.Size = new Size(166, 51);
             btnMgPS.TabIndex = 35;
@@ -571,7 +579,7 @@
             // 
             // btnMgSuppliers
             // 
-            btnMgSuppliers.Location = new Point(1074, 24);
+            btnMgSuppliers.Location = new Point(1368, 1216);
             btnMgSuppliers.Name = "btnMgSuppliers";
             btnMgSuppliers.Size = new Size(152, 51);
             btnMgSuppliers.TabIndex = 36;
@@ -581,7 +589,7 @@
             // 
             // btnManageProducts
             // 
-            btnManageProducts.Location = new Point(42, 929);
+            btnManageProducts.Location = new Point(1935, 1234);
             btnManageProducts.Name = "btnManageProducts";
             btnManageProducts.Size = new Size(135, 48);
             btnManageProducts.TabIndex = 37;
@@ -589,11 +597,68 @@
             btnManageProducts.UseVisualStyleBackColor = true;
             btnManageProducts.Click += btnManageProducts_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.TravelExpertLogo;
+            pictureBox1.Location = new Point(67, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(227, 224);
+            pictureBox1.TabIndex = 38;
+            pictureBox1.TabStop = false;
+            // 
+            // BtnPackagesUserControl
+            // 
+            BtnPackagesUserControl.Location = new Point(494, 168);
+            BtnPackagesUserControl.Name = "BtnPackagesUserControl";
+            BtnPackagesUserControl.Size = new Size(317, 68);
+            BtnPackagesUserControl.TabIndex = 39;
+            BtnPackagesUserControl.Text = "Packages";
+            BtnPackagesUserControl.UseVisualStyleBackColor = true;
+            BtnPackagesUserControl.Click += BtnPackagesUserControl_Click;
+            // 
+            // BtnProductsUserControl
+            // 
+            BtnProductsUserControl.Location = new Point(966, 168);
+            BtnProductsUserControl.Name = "BtnProductsUserControl";
+            BtnProductsUserControl.Size = new Size(317, 68);
+            BtnProductsUserControl.TabIndex = 40;
+            BtnProductsUserControl.Text = "Products";
+            BtnProductsUserControl.UseVisualStyleBackColor = true;
+            // 
+            // BtnSupplierUserControl
+            // 
+            BtnSupplierUserControl.Location = new Point(1456, 168);
+            BtnSupplierUserControl.Name = "BtnSupplierUserControl";
+            BtnSupplierUserControl.Size = new Size(317, 68);
+            BtnSupplierUserControl.TabIndex = 41;
+            BtnSupplierUserControl.Text = "Suppliers";
+            BtnSupplierUserControl.UseVisualStyleBackColor = true;
+            // 
+            // panel
+            // 
+            panel.Controls.Add(packagesUserControls1);
+            panel.Location = new Point(494, 247);
+            panel.Name = "panel";
+            panel.Size = new Size(1279, 565);
+            panel.TabIndex = 42;
+            // 
+            // packagesUserControls1
+            // 
+            packagesUserControls1.Location = new Point(3, 3);
+            packagesUserControls1.Name = "packagesUserControls1";
+            packagesUserControls1.Size = new Size(1814, 876);
+            packagesUserControls1.TabIndex = 0;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1599, 1055);
+            ClientSize = new Size(2277, 1454);
+            Controls.Add(panel);
+            Controls.Add(BtnSupplierUserControl);
+            Controls.Add(BtnProductsUserControl);
+            Controls.Add(BtnPackagesUserControl);
+            Controls.Add(pictureBox1);
             Controls.Add(btnManageProducts);
             Controls.Add(btnMgSuppliers);
             Controls.Add(btnMgPS);
@@ -611,7 +676,7 @@
             Controls.Add(groupBox4);
             Controls.Add(groupBox2);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Travel Experts";
             Load += Form1_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
@@ -625,6 +690,8 @@
             ((System.ComponentModel.ISupportInitialize)dataGVProduct).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -682,5 +749,11 @@
         private Button btnMgPS;
         private Button btnMgSuppliers;
         private Button btnManageProducts;
+        private PictureBox pictureBox1;
+        private Button BtnPackagesUserControl;
+        private Button BtnProductsUserControl;
+        private Button BtnSupplierUserControl;
+        private Panel panel;
+        private UserControls.PackagesUserControls packagesUserControls1;
     }
 }
