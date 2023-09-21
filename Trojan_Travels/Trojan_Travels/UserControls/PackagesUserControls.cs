@@ -34,15 +34,16 @@ namespace Trojan_Travels.UserControls
         public PackagesUserControls()
         {
             InitializeComponent();
-            //LoadData();
-            LoadDataAsync();
+            LoadData();
+           
             //clearButton();
         }
         //private void LoadData()
-        private async Task LoadDataAsync()
+        private async Task LoadData()
         {
             // retrieve data
-            var packages1 = dbContext.Packages.ToListAsync();
+            TravelExpertsContext dbContext = new TravelExpertsContext();
+            var packages1 = dbContext.Packages.ToList();
             packageBindingSource.DataSource = packages1;
             //var packages = packages1;
             // packageBindingSource.DataSource = packages1;

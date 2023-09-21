@@ -644,7 +644,7 @@
             // 
             // packagesUserControls1
             // 
-            packagesUserControls1.Location = new Point(3, 3);
+            packagesUserControls1.Location = new Point(-111, -9);
             packagesUserControls1.Name = "packagesUserControls1";
             packagesUserControls1.Size = new Size(1814, 876);
             packagesUserControls1.TabIndex = 0;
@@ -653,7 +653,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2277, 1454);
+            ClientSize = new Size(1924, 1055);
             Controls.Add(panel);
             Controls.Add(BtnSupplierUserControl);
             Controls.Add(BtnProductsUserControl);

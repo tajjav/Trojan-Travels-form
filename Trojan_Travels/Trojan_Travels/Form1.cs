@@ -504,14 +504,14 @@ namespace Trojan_Travels
 
         private void BtnPackagesUserControl_Click(object sender, EventArgs e)
         {
-            if (!Panel.Controls.Contains(PackagesUserControls.Instance))
-            {
-                Panel.Controls.Add(PackagesUserControls.Instance);
-                PackagesUserControls.Instance.Dock = DockStyle.Fill;
-                PackagesUserControls.Instance.BringToFront();
-            }
-            else
-                PackagesUserControls.Instance.BringToFront();
+            //if (!Control.ControlCollection.Contains(PackagesUserControls.Instance))
+            //{
+            //    Panel.ControlCollection.Add(PackagesUserControls.Instance);
+            //    PackagesUserControls.Instance.Dock = DockStyle.Fill;
+            //    PackagesUserControls.Instance.BringToFront();
+            //}
+            //else
+            //    PackagesUserControls.Instance.BringToFront();
         }
     }
 }

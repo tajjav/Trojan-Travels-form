@@ -12,8 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\nca\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\nca\\.nuget\\packages"
+      "C:\\Users\\TauqeerJavaid\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\TauqeerJavaid\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
