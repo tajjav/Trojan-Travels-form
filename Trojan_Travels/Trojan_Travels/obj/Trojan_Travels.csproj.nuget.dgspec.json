@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TauqeerJavaid\\Downloads\\TravelAgency\\Trojan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {}
+    "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TauqeerJavaid\\Downloads\\TravelAgency\\Trojan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {
+    "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TauqeerJavaid\\Downloads\\TravelAgency\\Trojan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
+        "projectUniqueName": "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
         "projectName": "Trojan_Travels",
-        "projectPath": "C:\\Users\\TauqeerJavaid\\Downloads\\TravelAgency\\Trojan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
-        "packagesPath": "C:\\Users\\TauqeerJavaid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TauqeerJavaid\\Downloads\\TravelAgency\\Trojan-Travels-form\\Trojan_Travels\\Trojan_Travels\\obj\\",
+        "projectPath": "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\Trojan_Travels.csproj",
+        "packagesPath": "C:\\Users\\nca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nca\\Documents\\LHL\\Torjan-Travels-form\\Trojan_Travels\\Trojan_Travels\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\TauqeerJavaid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

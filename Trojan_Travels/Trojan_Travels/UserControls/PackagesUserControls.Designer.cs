@@ -49,8 +49,6 @@
             txtPackageName = new TextBox();
             label2 = new Label();
             dataGVPackage = new DataGridView();
-            bindingSource1 = new BindingSource(components);
-            bindingSource2 = new BindingSource(components);
             packageIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             pkgNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             pkgStartDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -60,20 +58,23 @@
             pkgAgencyCommissionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             bookingsDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             packagesProductsSuppliersDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            bindingSource2 = new BindingSource(components);
+            bindingSource1 = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGVPackage).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
             // 
             splitContainer1.Dock = DockStyle.Fill;
             splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Margin = new Padding(3, 2, 3, 2);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -84,17 +85,17 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(dataGVPackage);
-            splitContainer1.Size = new Size(1451, 701);
-            splitContainer1.SplitterDistance = 483;
+            splitContainer1.Size = new Size(1183, 470);
+            splitContainer1.SplitterDistance = 393;
             splitContainer1.TabIndex = 0;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(127, 27);
+            label3.Location = new Point(111, 20);
             label3.Name = "label3";
-            label3.Size = new Size(214, 31);
+            label3.Size = new Size(177, 25);
             label3.TabIndex = 3;
             label3.Text = "Add a new Package";
             // 
@@ -116,141 +117,152 @@
             groupBox3.Controls.Add(label8);
             groupBox3.Controls.Add(txtPackageName);
             groupBox3.Controls.Add(label2);
-            groupBox3.Location = new Point(20, 110);
+            groupBox3.Location = new Point(20, 76);
+            groupBox3.Margin = new Padding(3, 2, 3, 2);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(436, 392);
+            groupBox3.Padding = new Padding(3, 2, 3, 2);
+            groupBox3.Size = new Size(370, 293);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "Packages";
             // 
             // txtProductSupplierId
             // 
-            txtProductSupplierId.Location = new Point(222, 102);
+            txtProductSupplierId.Location = new Point(194, 76);
+            txtProductSupplierId.Margin = new Padding(3, 2, 3, 2);
             txtProductSupplierId.Name = "txtProductSupplierId";
             txtProductSupplierId.ReadOnly = true;
-            txtProductSupplierId.Size = new Size(187, 27);
+            txtProductSupplierId.Size = new Size(164, 23);
             txtProductSupplierId.TabIndex = 22;
             // 
             // btnEditPackage
             // 
-            btnEditPackage.Location = new Point(332, 346);
+            btnEditPackage.Location = new Point(290, 260);
+            btnEditPackage.Margin = new Padding(3, 2, 3, 2);
             btnEditPackage.Name = "btnEditPackage";
-            btnEditPackage.Size = new Size(63, 24);
+            btnEditPackage.Size = new Size(55, 29);
             btnEditPackage.TabIndex = 21;
             btnEditPackage.Text = "Edit";
             btnEditPackage.UseVisualStyleBackColor = true;
             // 
             // btnAddPackage
             // 
-            btnAddPackage.Location = new Point(234, 346);
+            btnAddPackage.Location = new Point(205, 260);
+            btnAddPackage.Margin = new Padding(3, 2, 3, 2);
             btnAddPackage.Name = "btnAddPackage";
-            btnAddPackage.Size = new Size(63, 24);
+            btnAddPackage.Size = new Size(55, 29);
             btnAddPackage.TabIndex = 20;
             btnAddPackage.Text = "Add";
             btnAddPackage.UseVisualStyleBackColor = true;
             // 
             // dateTimePickerEndDate
             // 
-            dateTimePickerEndDate.Location = new Point(224, 173);
+            dateTimePickerEndDate.Location = new Point(196, 130);
+            dateTimePickerEndDate.Margin = new Padding(3, 2, 3, 2);
             dateTimePickerEndDate.Name = "dateTimePickerEndDate";
-            dateTimePickerEndDate.Size = new Size(185, 27);
+            dateTimePickerEndDate.Size = new Size(162, 23);
             dateTimePickerEndDate.TabIndex = 19;
             // 
             // dateTimePickerStartDate
             // 
-            dateTimePickerStartDate.Location = new Point(222, 140);
+            dateTimePickerStartDate.Location = new Point(194, 105);
+            dateTimePickerStartDate.Margin = new Padding(3, 2, 3, 2);
             dateTimePickerStartDate.Name = "dateTimePickerStartDate";
-            dateTimePickerStartDate.Size = new Size(185, 27);
+            dateTimePickerStartDate.Size = new Size(162, 23);
             dateTimePickerStartDate.TabIndex = 18;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(13, 101);
+            label1.Location = new Point(11, 76);
             label1.Name = "label1";
-            label1.Size = new Size(128, 20);
+            label1.Size = new Size(102, 15);
             label1.TabIndex = 17;
             label1.Text = "PrpductSupplierId";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(13, 257);
+            label12.Location = new Point(11, 193);
             label12.Name = "label12";
-            label12.Size = new Size(134, 20);
+            label12.Size = new Size(107, 15);
             label12.TabIndex = 15;
             label12.Text = "Package Base Price";
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(13, 212);
+            label13.Location = new Point(11, 159);
             label13.Name = "label13";
-            label13.Size = new Size(143, 20);
+            label13.Size = new Size(114, 15);
             label13.TabIndex = 14;
             label13.Text = "Package Description";
             // 
             // txtPackageCommission
             // 
-            txtPackageCommission.Location = new Point(222, 297);
+            txtPackageCommission.Location = new Point(194, 223);
+            txtPackageCommission.Margin = new Padding(3, 2, 3, 2);
             txtPackageCommission.Name = "txtPackageCommission";
-            txtPackageCommission.Size = new Size(187, 27);
+            txtPackageCommission.Size = new Size(164, 23);
             txtPackageCommission.TabIndex = 13;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(13, 300);
+            label6.Location = new Point(11, 225);
             label6.Name = "label6";
-            label6.Size = new Size(201, 20);
+            label6.Size = new Size(164, 15);
             label6.TabIndex = 12;
             label6.Text = "Package Agency Commission";
             // 
             // txtPackageBasePrice
             // 
-            txtPackageBasePrice.Location = new Point(224, 250);
+            txtPackageBasePrice.Location = new Point(196, 188);
+            txtPackageBasePrice.Margin = new Padding(3, 2, 3, 2);
             txtPackageBasePrice.Name = "txtPackageBasePrice";
-            txtPackageBasePrice.Size = new Size(187, 27);
+            txtPackageBasePrice.Size = new Size(164, 23);
             txtPackageBasePrice.TabIndex = 11;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(13, 178);
+            label7.Location = new Point(11, 134);
             label7.Name = "label7";
-            label7.Size = new Size(128, 20);
+            label7.Size = new Size(101, 15);
             label7.TabIndex = 10;
             label7.Text = "Package End Date";
             // 
             // txtPackageDescription
             // 
-            txtPackageDescription.Location = new Point(224, 209);
+            txtPackageDescription.Location = new Point(196, 157);
+            txtPackageDescription.Margin = new Padding(3, 2, 3, 2);
             txtPackageDescription.Name = "txtPackageDescription";
-            txtPackageDescription.Size = new Size(187, 27);
+            txtPackageDescription.Size = new Size(164, 23);
             txtPackageDescription.TabIndex = 9;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(13, 140);
+            label8.Location = new Point(11, 105);
             label8.Name = "label8";
-            label8.Size = new Size(134, 20);
+            label8.Size = new Size(105, 15);
             label8.TabIndex = 8;
             label8.Text = "Package Start Date";
             // 
             // txtPackageName
             // 
-            txtPackageName.Location = new Point(224, 55);
+            txtPackageName.Location = new Point(196, 41);
+            txtPackageName.Margin = new Padding(3, 2, 3, 2);
             txtPackageName.Name = "txtPackageName";
-            txtPackageName.Size = new Size(187, 27);
+            txtPackageName.Size = new Size(164, 23);
             txtPackageName.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(13, 55);
+            label2.Location = new Point(11, 41);
             label2.Name = "label2";
-            label2.Size = new Size(107, 20);
+            label2.Size = new Size(86, 15);
             label2.TabIndex = 0;
             label2.Text = "Package Name";
             // 
@@ -261,20 +273,13 @@
             dataGVPackage.Columns.AddRange(new DataGridViewColumn[] { packageIdDataGridViewTextBoxColumn, pkgNameDataGridViewTextBoxColumn, pkgStartDateDataGridViewTextBoxColumn, pkgEndDateDataGridViewTextBoxColumn, pkgDescDataGridViewTextBoxColumn, pkgBasePriceDataGridViewTextBoxColumn, pkgAgencyCommissionDataGridViewTextBoxColumn, bookingsDataGridViewTextBoxColumn, packagesProductsSuppliersDataGridViewTextBoxColumn });
             dataGVPackage.DataBindings.Add(new Binding("DataContext", bindingSource2, "PackageId", true));
             dataGVPackage.DataSource = bindingSource1;
-            dataGVPackage.Location = new Point(0, 3);
+            dataGVPackage.Location = new Point(0, 2);
+            dataGVPackage.Margin = new Padding(3, 2, 3, 2);
             dataGVPackage.Name = "dataGVPackage";
             dataGVPackage.RowHeadersWidth = 51;
             dataGVPackage.RowTemplate.Height = 29;
-            dataGVPackage.Size = new Size(961, 698);
+            dataGVPackage.Size = new Size(841, 524);
             dataGVPackage.TabIndex = 25;
-            // 
-            // bindingSource1
-            // 
-            bindingSource1.DataSource = typeof(Models.Package);
-            // 
-            // bindingSource2
-            // 
-            bindingSource2.DataSource = typeof(Models.Package);
             // 
             // packageIdDataGridViewTextBoxColumn
             // 
@@ -348,13 +353,22 @@
             packagesProductsSuppliersDataGridViewTextBoxColumn.Name = "packagesProductsSuppliersDataGridViewTextBoxColumn";
             packagesProductsSuppliersDataGridViewTextBoxColumn.Width = 125;
             // 
+            // bindingSource2
+            // 
+            bindingSource2.DataSource = typeof(Models.Package);
+            // 
+            // bindingSource1
+            // 
+            bindingSource1.DataSource = typeof(Models.Package);
+            // 
             // PackagesUserControls
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(splitContainer1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PackagesUserControls";
-            Size = new Size(1451, 701);
+            Size = new Size(1183, 470);
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);
@@ -363,8 +377,8 @@
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGVPackage).EndInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ResumeLayout(false);
         }
 

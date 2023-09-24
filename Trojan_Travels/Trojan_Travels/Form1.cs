@@ -513,5 +513,10 @@ namespace Trojan_Travels
             //else
             //    PackagesUserControls.Instance.BringToFront();
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -19,8 +19,8 @@ namespace Trojan_Travels.UserControls
         {
             get
             {
-                if(_instance == null )
-                    _instance = new PackagesUserControls(); 
+                if (_instance == null)
+                    _instance = new PackagesUserControls();
                 return _instance;
             }
         }
@@ -35,7 +35,7 @@ namespace Trojan_Travels.UserControls
         {
             InitializeComponent();
             LoadData();
-           
+
             //clearButton();
         }
         //private void LoadData()
